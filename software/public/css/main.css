@@ -1,0 +1,82 @@
+@import "/css/common.css";
+/* content */
+ .content {
+	 position: relative;
+	 width: 100%;
+	 background-color:#f6f5ef;
+
+}
+ .content > .inner {
+	 height: 600px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .content .medal {
+	 perspective: 600px;
+	 width: 300px;
+	 height: 300px;
+	 left: 0;
+	 right: 0;
+	 top: 0;
+	 bottom: 0;
+	 margin: auto;
+}
+ .content .medal .front {
+	 width: 300px;
+	 height: 300px;
+	 left: 0;
+	 right: 0;
+	 top: 0;
+	 bottom: 0;
+	 margin: auto;
+	 border-radius: 45%;
+	 border: #2d2926 solid 3px;
+	 background-color:#f6f5ef;
+	 backface-visibility: hidden;
+	 transition: 1s;
+	 position: absolute;
+	 transform: rotateY(0deg);
+}
+.content .medal .front .images_black_box {
+	position: relative;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 50px;
+	margin: auto;
+}
+ .content .medal .back {
+	 width: 300px;
+	 height: 300px;
+	 left: 0;
+	 right: 0;
+	 top: 0;
+	 bottom: 0;
+	 margin: auto;
+	 border-radius: 45%;
+	 border: #2d2926 solid 3px;
+	 background-color: #f6f5ef;
+	 backface-visibility: hidden;
+	 transition: 1s;
+	 position: absolute;
+	 transform: rotateY(-180deg);
+}
+ .content .medal .back .btn {
+	 background-color: #2d2926;
+}
+ .content .medal .back .btn.btn-login {
+	 position: relative;
+	 top: 120px;
+	 left: 0px;
+	 right: 0px;
+	 margin: auto;
+	 color: #fff;
+}
+ .content .medal:hover .front {
+	 transform: rotateY(180deg);
+}
+ .content .medal:hover .back {
+	 transform: rotateY(0deg);
+}
+ 
